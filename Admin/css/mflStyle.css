@@ -1,0 +1,82 @@
+﻿body {
+}
+
+.mflLeft
+{
+	font-size:13px;
+	position:relative;
+	float:left;
+	clear:left;
+	margin:5px;
+	width:100px;
+	height:300px;
+	border:solid 1px silver;
+	text-align:center;
+}
+.mflRight
+{
+	font-size:13px;
+	position:relative;
+	float:left;
+	width:300px;
+	height:300px;
+	margin:5px;
+	margin-left:0px;
+	border:solid 1px silver;
+	overflow:auto;
+	text-align:left;
+}
+.mflBottom
+{
+	position:relative;
+	clear:both;
+	margin:0px 5px 0px 5px;
+	width:400px;
+	padding:4px;
+	text-align:left;
+	border:solid 1px silver;
+}
+/*******上传文件控件样式*******/
+.mflFileUploadCss
+{
+	width:5px;
+	margin:-2px 0px 0px -7px;
+	filter:alpha(opacity=0);
+	opacity:0; 
+}
+/******包含上传控件的Div******/
+.mflLeft_FileUpload
+{
+	position:relative;
+	margin-top:30px;
+	border:solid 1px silver;
+	width:60px;
+	height:20px;
+	overflow:hidden;
+	clear:both;
+	background-image:url("../images/left-img5.jpg");
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+/****保存上传文件信息的OL样式****/
+.mflRightOlFiles
+{
+	margin-top:20px;
+}
+.mflRightOlFiles li
+{
+	padding:5px;
+}
+span
+{
+	font-size:12px;
+	color:green;
+}
+.mflFileCountMsg
+{
+	margin-left:10px;
+}
+.FileNameStyle
+{
+	color:Silver;
+}

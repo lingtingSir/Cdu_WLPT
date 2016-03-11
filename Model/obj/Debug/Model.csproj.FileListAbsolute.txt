@@ -1,0 +1,5 @@
+D:\新建文件夹 (2)\wlpt\Model\bin\Debug\Model.dll
+D:\新建文件夹 (2)\wlpt\Model\bin\Debug\Model.pdb
+D:\新建文件夹 (2)\wlpt\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\新建文件夹 (2)\wlpt\Model\obj\Debug\Model.dll
+D:\新建文件夹 (2)\wlpt\Model\obj\Debug\Model.pdb

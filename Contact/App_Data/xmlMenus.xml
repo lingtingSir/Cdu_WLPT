@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menus>
+    <Menu ParentID="0">
+        <id>1</id>
+        <title>项目信息管理</title>
+        <url></url>
+    </Menu>
+    <Menu ParentID="1">
+        <id>2</id>
+        <title>项目添加</title>
+        <url>admin/users.aspx</url>
+    </Menu>
+    <Menu ParentID="1">
+        <id>3</id>
+        <title>项目</title>
+        <url>admin/roles.aspx</url>
+    </Menu>
+    <Menu ParentID="0">
+        <id>4</id>
+        <title>个人中心</title>
+        <url>admin/articles.aspx</url>
+    </Menu>
+  <Menu ParentID="4">
+    <id>3</id>
+    <title>修改个人信息</title>
+    <url>admin/roles.aspx</url>
+  </Menu>
+    <Menu ParentID="4">
+        <id>4</id>
+        <title>修改密码</title>
+        <url>admin/articles.aspx</url>
+    </Menu>
+</Menus>

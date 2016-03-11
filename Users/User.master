@@ -1,0 +1,321 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="Users_User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>欢迎进入梦工厂网络平台</title>
+    <link href="Css/sms.Css" rel="stylesheet" type="text/css" media="screen" />
+
+    <script src="Js/window.js" type="text/javascript"></script>
+
+    <link href="Css/resource.css" rel="stylesheet" type="text/css" />
+    <link href="Css/homepage.css" rel="stylesheet" type="text/css" />
+    
+     <%--弹出窗口--%>
+
+    <script type="text/javascript" src="../Admin/js/jquery.js"></script>
+
+    <script type="text/javascript" src="../Admin/js/thickbox_plus.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Admin/css/thickbox.css" />
+    <%--弹出窗口--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <script type="text/javascript" >
+        var online = new Array();
+        document.write('<div id="divStayTopLeft" style="position:absolute">')
+          </script>
+        <script type="text/javascript">
+            var verticalpos = "frombottom"
+            if (!document.layers) {
+                document.write('</div>')
+            }
+            function JSFX_FloatTopDiv() {
+                var startX = 2,
+                startY = 500;
+                var ns = (navigator.appName.indexOf("Netscape") != -1);
+                var d = document;
+                function ml(id) {
+                    var el = d.getElementById ? d.getElementById(id) : d.all ? d.all[id] : d.layers[id];
+                    if (d.layers) el.style = el;
+                    el.sp = function (x, y) { this.style.left = x; this.style.top = y; };
+                    el.x = startX;
+                    if (verticalpos == "fromtop") {
+                        el.y = startY;
+
+                    }
+                    else {
+                        el.y = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+                        el.y -= startY;
+                    }
+                    return el;
+                }
+                window.stayTopLeft = function () {
+                    if (verticalpos == "fromtop") {
+                        var pY = ns ? pageYOffset : document.body.scrollTop;
+                        ftlObj.y += (pY + startY - ftlObj.y) / 8;
+                    }
+                    else {
+                        var pY = ns ? pageYOffset + innerHeight : document.body.scrollTop + document.body.clientHeight;
+                        ftlObj.y += (pY - startY - ftlObj.y) / 8;
+                    }
+                    ftlObj.sP(ftlObj.x, ftlObj.y);
+                    setTimeout("stayTopLeft()", 10);
+                }
+                ftlObj = ml("divStayTopLeft");
+
+
+            }
+            JSFX_FloatTopDiv();
+
+         </script>
+        <script type="text/javascript">
+            function ShowWindow(url, h, w) {
+                window.oepn(url, "_blank", "top=18,left=80,widht=" + w + ",height=" + h + ",toolbar=no,location=no,memubar=no,status=no,scrollbar=yes,resizable=no");
+
+            }
+        </script>
+
+
+    <div id="header">
+        <div class="logo">
+            <a href="#">
+                <img src="Images/logo3.png" style="width:79px; height:72px; margin-left:88px" border="0" /></a></div>
+        <div class="header_hand">
+            <%--<img src="Images/header_hand.gif" border="0" />--%></div>
+    </div>
+
+    <script type="text/javascript">
+        var day = "";
+        var month = "";
+        var ampm = "";
+        var ampmhour = "";
+        var year = "";
+        mydate = new Date();
+        myweekday = mydate.getDay();
+        mymonth = mydate.getMonth() + 1;
+        myday = mydate.getDate();
+        myyear = mydate.getYear();
+        hours = mydate.getHours();
+        minutes = mydate.getSeconds();
+        seconds = mydate.getSeconds();
+        year = (myyear > 200) ? myyear : 1900 + myyear;
+        if (myweekday == 0) {
+            weekday = "星期日";
+        }
+        else if (myweekday == 1) {
+            weekday = "星期一";
+        }
+        else if (myweekday == 2) {
+            weekday = "星期二"
+        }
+        else if (myweekday == 3) {
+            weekday = "星期三"
+
+        }
+        else if (myweekday == 4) {
+            weekday = "星期四"
+        }
+        else if (myweekday == 5) {
+            weekday = "星期五"
+        }
+        else if (myweekday == 6) {
+            weekday = "星期六"
+        }
+        function showtime() {
+            today = new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+            var timeValue = hours;
+            timeValue += ((minutes < 10) ? ":0" : ":") + minutes + "";
+            timeValue += ((seconds < 10) ? ":0" : ":") + seconds + "";
+            var timetext = timeValue
+            document.getElementById("liveclock").innerText = timetext;
+            setTimeout("showtime()", 1000);
+
+        }
+
+
+        </script>
+
+    <div id="user">
+        <ul>
+            <span class="right">
+
+                <script type="text/javascript">document.write(year + "年" + mymonth + "月" + myday + "日 " + weekday);</script>
+
+                <span id="liveclock">
+
+                    <script type="text/javascript">
+                        showtime();
+
+                    </script>
+
+                </span></span>
+            <li style="text-align: right;"><strong>登录信息:</strong></li>
+            <li style="text-align: right;">
+                <img src="Images/user_head.gif" width="27" height="32" align="absmiddle" />
+                <strong>账号：</strong></li>
+            <li><span id="LoginInfo1_CorpID"><asp:Label ID="lblUserID" runat="server" Text="Label"></asp:Label></span></li>
+            <li><strong>用户名：</strong><span id="LoginInfo1_Cell"><asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label></span></li>
+            <li><strong>当前用户币：</strong><span id="LoginInfo1_Balance"><asp:Label ID="lblIntegral" runat="server" Text="Label"></asp:Label></span></li>
+            <li><strong>当前项目组：</strong><span id="LoginInfo1_Balance0"><asp:Label ID="lblIntegral0" runat="server" Text="Label"></asp:Label></span></li>
+        </ul>
+    </div>
+    <div id="tool">
+        <ul>
+            <li style="line-height: 22px;"><strong>工具栏：</strong></li>
+            <a href="../Login.aspx">
+                <li onmouseover="this.className='tool_button'" onmouseout="this.className=''">
+                    <img src="images/tool_01.gif" border="0" align="absbottom" />
+                    网站首页</li>
+            </a><a href="UserHelp.aspx">
+                <li onmouseover="this.className='tool_button'" onmouseout="this.className=''">
+                    <img src="images/tool_03.gif" border="0" align="absbottom" />
+                    使用帮助</li>
+            </a><a href="UserHelp.aspx">
+                <li onmouseover="this.className='tool_button'" onmouseout="this.className=''">
+                    <img src="images/tool_04.gif" border="0" align="absbottom" />
+                    注意事项</li></a>
+        </ul>
+    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" runat="server" id="tbwl">
+        <tr>
+            <td width="15">
+            </td>
+            <td width="155" valign="top">
+                <link href="Css/sms.css" type="text/css" rel="stylesheet" media="screen" />
+                <div class="left_menu">
+                    <ul>
+                        <li style="margin-top: 0px;"><a href="ProjectInternetion.aspx" class="sms_send">&nbsp;&nbsp;<img
+                            src="images/menu_01.png" border="0" align="absmiddle" /> 项目管理</a></li>
+                        <li><a href="UserIntegral.aspx?" class="sms_smsreg">&nbsp;&nbsp;<img src="images/menu_06.png"
+                            border="0" align="absmiddle" />
+                             积分管理</a></li>
+                        <li><a href="UserHolidayManage.aspx" class="sms_smsbase">&nbsp;&nbsp;<img src="images/menu_04.png"
+                            border="0" align="absmiddle" />
+                            请假管理</a></li>
+                     
+                        <li><a href="UserRewardManager.aspx" class="sms_smschargeup">&nbsp;&nbsp;<img src="images/menu_05.png"
+                            border="0" align="absmiddle" />
+                           上报加分</a></li>
+                       
+                        <li><a href="UserInfo.aspx" class="sms_sendlog">&nbsp;&nbsp;<img src="images/menu_08.png"
+                            border="0" align="absmiddle" />
+                            个人信息</a></li>
+                        <li><a href="UpdatePwd.aspx" class="sms_accountcheck">&nbsp;&nbsp;<img src="images/menu_11.png"
+                            border="0" align="absmiddle" />
+                            密码修改</a></li>
+                         <li><a href="UserArticle.aspx" class="sms_smsget">&nbsp;&nbsp;<img src="images/menu_10.png"
+                            border="0" align="absmiddle" />
+                           讨论区</a></li>
+                        <li><a href="UserArticle_Mine.aspx" class="sms_smsupdpwd">&nbsp;&nbsp;<img src="images/menu_09.png"
+                            border="0" align="absmiddle" />
+                            我的帖子</a></li>
+                        <li><a href="../Login_1.aspx">&nbsp;&nbsp;<img src="images/menu_13.png" border="0"
+                            align="absmiddle" />
+
+                            注销登陆</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td valign="top" bgcolor="#FFFFFF">
+                <table cellspacing="0" cellpadding="0" class="infolist_vt" style=" width:100% ; height:100%;">
+                    <tr>
+                        <th colspan="2" class="caption">
+                       
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            
+                        </th>
+                    </tr>
+                </table>
+            </td>
+            <td width="15">
+            </td>
+        </tr>
+    </table>
+    
+    <div id="footer" style="color: #FFFFFF">
+        服务热线：<strong><font class="orange">028-88888888</font></strong> 在线客服咨询：QQ <a target="blank"
+            href="http://wpa.qq.com/msgrd?V=1&Uin=363905547&Site=www.mb345.com&Menu=yes">
+            <img border="0" src="http://wpa.qq.com/pa?p=1:363905547:4" alt="QQ">
+            363905547</a><a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=363905547&Site=www.mb345.com&Menu=yes"><img
+                border="0" src="http://wpa.qq.com/pa?p=1:363905547:4" alt="QQ">
+                363905547</a>
+        <br />
+        Copyright &copy; 2014 sms.mb345 All rights reserved. 最佳分辩率 1024*768 成都***************
+        版权所有
+    </div>
+   
+
+    <script type="text/javascript">
+        var oo = new fw.com.ui.window({
+            range: [250, 150, 400, 150],
+            title: "欢迎使用万年历",
+            html: "<iframe src='calendar.html' width='388' height='300' scrolling='no'></iframe>",
+            display: "none"
+        });
+    </script>
+<script type="text/javascript">
+    function wsug(e, str) { // http://www.hansir.cn
+        var oThis = arguments.callee;
+        if (!str) {
+            oThis.sug.style.visibility = 'hidden';
+            document.onmousemove = null;
+            return;
+        }
+        if (!oThis.sug) {
+            var div = document.createElement('div'), css = 'top:0; left:0; position:absolute;  z-index:100; visibility:hidden';
+            div.style.cssText = css;
+            div.setAttribute('style', css);
+            var sug = document.createElement('div'), css = 'font:normal 12px/16px "宋体"; white-space:nowrap; color:#666; padding:3px; position:absolute; left:0; top:0; z-index:10; background:#f9fdfd; border:1px solid #0aa';
+            sug.style.cssText = css;
+            sug.setAttribute('style', css);
+            var dr = document.createElement('div'), css = 'position:absolute;top:3px; left:3px; background:#333; filter:alpha(opacity=50); opacity:0.5; z-index:9';
+            dr.style.cssText = css;
+            dr.setAttribute('style', css);
+            var ifr = document.createElement('iframe'), css = 'position:absolute; left:0; top:0; z-index:8; filter:alpha(opacity=0);  opacity:0';
+            ifr.style.cssText = css;
+            ifr.setAttribute('style', css);
+            div.appendChild(ifr);
+            div.appendChild(dr);
+            div.appendChild(sug);
+            div.sug = sug;
+            document.body.appendChild(div);
+            oThis.sug = div;
+            oThis.dr = dr;
+            oThis.ifr = ifr;
+            div = dr = ifr = sug = null;
+        }
+        var e = e || window.event, obj = oThis.sug, dr = oThis.dr, ifr = oThis.ifr;
+        obj.sug.innerHTML = str;
+
+        var w = obj.sug.offsetWidth, h = obj.sug.offsetHeight, dw = document.documentElement.clientWidth || document.body.clientWidth; dh = document.documentElement.clientHeight || document.body.clientHeight;
+        var st = document.documentElement.scrollTop || document.body.scrollTop, sl = document.documentElement.scrollLeft || document.body.scrollLeft;
+        var left = e.clientX + sl + 17 + w < dw + sl && e.clientX + sl + 15 || e.clientX + sl - 8 - w, top = e.clientY + st + 17 + h < dh + st && e.clientY + st + 17 || e.clientY + st - 5 - h;
+        obj.style.left = left + 10 + 'px';
+        obj.style.top = top + 10 + 'px';
+        dr.style.width = w + 'px';
+        dr.style.height = h + 'px';
+        ifr.style.width = w + 3 + 'px';
+        ifr.style.height = h + 3 + 'px';
+        obj.style.visibility = 'visible';
+        document.onmousemove = function (e) {
+            var e = e || window.event, st = document.documentElement.scrollTop || document.body.scrollTop, sl = document.documentElement.scrollLeft || document.body.scrollLeft;
+            var left = e.clientX + sl + 17 + w < dw + sl && e.clientX + sl + 15 || e.clientX + sl - 8 - w, top = e.clientY + st + 17 + h < dh + st && e.clientY + st + 17 || e.clientY + st - 5 - h;
+            obj.style.left = left + 'px';
+            obj.style.top = top + 'px';
+        }
+    }
+</script>
+    </form>
+</body>
+
+</html>

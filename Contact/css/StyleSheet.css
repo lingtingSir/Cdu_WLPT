@@ -1,0 +1,109 @@
+﻿body {
+    font-family:'lucida grande',tahoma,arial,sans-serif;
+    font-size:11px;
+    margin:0;
+}
+#header {
+    background: #7F99BE url(../images/layout-browser-hd-bg.gif) repeat-x center;
+    height:30px;
+}
+#header h1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+.menu
+{
+    background-image: url(../ext/resources/images/default/toolbar/bg.gif);
+    height: 25px; line-height: 25px;border: 1px #8db2e3 solid; 
+    padding-left: 10px; padding-right: 10px
+}
+.south
+{
+    text-align:center;background-color:#DFE8F6;
+}
+
+.loading-indicator {
+    font-size:11px;
+    background-image:url('../../resources/images/default/grid/loading.gif');
+    background-repeat: no-repeat;
+    background-position:top left;
+    padding-left:20px;
+	height:18px;
+	text-align:left;
+}
+#loading-mask{
+	position:absolute;
+	left:0;
+	top:0;
+    width:100%;
+    height:100%;
+    z-index:20000;
+    background-color:white;
+}
+#loading{
+	position:absolute;
+	left:45%;
+	top:40%;
+	padding:2px;
+	z-index:20001;
+    height:auto;
+}
+#loading img {
+    margin-bottom:5px;
+}
+#loading .loading-indicator{
+	background:white;
+	color:#555;
+	font:bold 13px tahoma,arial,helvetica;
+	padding:10px;
+	margin:0;
+    text-align:center;
+    height:auto;
+}
+
+/* Ext iconCLS */
+.settings {background-image:url(../ext/icons/fam/folder_wrench.png) !important;} 
+.nav {background-image:url(../ext/icons/fam/folder_go.png) !important;} 
+/*BodyStyle Class*/
+.bodystyle{font-size:16px; color:Red;margin:0px;padding:0px;}
+
+.x-layout-collapsed-west{background-image:url(../images/navigation.gif);
+            background-repeat:no-repeat;
+		    background-position:center;}
+.Txt-Center
+{
+    position:absolute;
+	left:30%;
+	top:40%;
+	padding:2px;
+	z-index:20001;
+    height:auto;
+}
+
+/* 左侧导航样式 */
+.LeftNav
+{
+    margin:0px;
+    margin-left:10px;
+    padding:10px;
+    list-style-type:none;
+    list-style-image:url(../ext/icons/fav.gif);
+    list-style-position:outside;
+}
+.LeftNav li
+{
+  /* line-height:16px;*/
+  padding-left:3px;
+}
+.LeftNav li a:hover
+{
+    text-decoration:underline;
+    color:red;
+}
+.LeftNav li a
+{
+    text-decoration:none;
+    color:Maroon;
+}

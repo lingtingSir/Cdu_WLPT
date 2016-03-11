@@ -1,0 +1,10 @@
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\BLL.dll
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\BLL.pdb
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\AspNetPager.dll
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\Dal.dll
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\Model.dll
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\Dal.pdb
+D:\新建文件夹 (2)\wlpt\BLL\bin\Debug\Model.pdb
+D:\新建文件夹 (2)\wlpt\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\新建文件夹 (2)\wlpt\BLL\obj\Debug\BLL.dll
+D:\新建文件夹 (2)\wlpt\BLL\obj\Debug\BLL.pdb

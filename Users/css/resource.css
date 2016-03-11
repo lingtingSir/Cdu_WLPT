@@ -1,0 +1,110 @@
+﻿*{
+	margin:0px;
+	padding:0px;
+	}
+
+body {
+    font-size:13px;
+    font-family:"宋体",sans-serif;
+    color:#000000;
+    text-align:center;
+    min-width:760px;
+    margin-top:20px;
+    margin-bottom:15px;
+    scrollbar-face-color:#ffffff;
+    scrollbar-highlight-color:#ffffff;
+    SCROLLBAR-SHADOW-COLOR: #AEAEAE;
+	SCROLLBAR-3DLIGHT-COLOR: #AEAEAE;
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+
+}
+th{
+	font-weight:normal;
+    font-size:13px;
+}
+td{
+	text-align:left;
+        font-size: 13px;
+	font-family: "宋体",sans-serif;
+}
+th{
+	text-align:center;
+}
+
+
+
+table.function , table.infolist_hr , table.infolist_vt ,div.button ,div.space,table.infotitle , table.content{
+    width:96%;
+    margin:0 auto;
+}
+table.function , table.infolist_hr , table.infolist_vt , table.infotitle , div.space,table.content{
+    border-width:1px 1px 1px 1px;
+}
+table.function , table.infolist_hr , table.infolist_vt , table.infotitle ,  table.infotitle , table.content{
+    border-style:solid;
+    border-color:#749fe3;
+}
+table.infolist_hr th.caption , table.infolist_vt th.caption , table.infotitle th.caption , table.infolist_vt th.captionhr{
+   background:url(../image/resource_infolistthli.gif) no-repeat 10px 5px #EBEBEB;
+	padding-left:25px;
+	text-align:left;
+	color:#915003;
+	font-size:13px;
+	letter-spacing:2px;
+	height:22px;
+}
+table.infolist_vt th.caption{
+    border-bottom:1px solid #749fe3;
+}
+table.infolist_vt th.common{
+    background:#d1dcf4;
+    padding:2px 0;
+    padding-left:15px;
+    text-align:left;
+    font-size:13px;
+    border-bottom:1px solid #FFF;
+    border-right:1px solid #749fe3;
+}
+table.infolist_vt td.end{
+    background:#EBEBEB;
+    border-bottom:1px solid #DEB960;
+}
+
+
+table.infolist_hr th.common , table.infolist th.icommon{
+    background:#AEAEAE;
+    color:#FFF;
+    border-bottom:3px solid #86abda;
+    border-right:1px solid #fff;
+}
+
+
+table.infolist_hr td.common , table.infolist td icommon{
+    background-color:#EBEBEB;
+    color:#000;
+    font-size:13px;
+    border-bottom:1px solid #FFF;
+    border-right:1px solid #FFF;
+}
+
+
+
+
+table.infolist_vt th.common{
+    background:#d1dcf4;
+    padding:2px 0;
+    padding-left:15px;
+    text-align:left;
+    font-size:13px;
+    border-bottom:1px solid #FFF;
+    border-right:1px solid #749fe3;
+}
+
+
+
+table.infolist_vt td.common{
+    background:#EBEBEB;
+    border-bottom:1px solid #FFF;
+}

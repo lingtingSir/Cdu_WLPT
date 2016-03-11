@@ -1,0 +1,350 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+	}
+body {
+    font-size: 13px;
+	font-family: "宋体",sans-serif;
+	color:#000000;
+    text-align:center;
+	min-width:760px;
+	margin-top:20px;
+	margin-bottom:15px;
+	/*SCROLLBAR-FACE-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #AEAEAE;
+	SCROLLBAR-3DLIGHT-COLOR: #AEAEAE;
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;  */
+}
+b{
+	font-size:12px;
+	font-weight:normal;
+	color:#c00;
+}
+b.explain{
+	    color:#c00;
+	    letter-spacing:1px;
+	}
+img.space{
+	margin:0 3px;
+}
+BLOCKQUOTE{
+    margin-left:40px;
+}
+body.tree{
+	background:#F9F9F7;
+	margin:0px;
+	margin-left:-20px;
+	padding:0px;
+	text-align:left;
+}
+input.input{
+	border:1px solid  #749fe3;
+	background:#FFF;
+}
+textarea{
+	border:1px solid  #749fe3;
+	background:#FFF;
+}
+
+input.button{
+	font-size: 12px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	background-image: url('../images/button.gif');
+	border: 1px solid #749fe3;
+	background-repeat: repeat-x;
+	font-family: "宋体",sans-serif;
+	color: #333333;
+	}
+img{
+	border:0px;
+}
+th{
+	font-weight:normal;
+    font-size:13px;
+}
+td{
+	text-align:left;
+        font-size: 13px;
+	font-family: "宋体",sans-serif;
+}
+th{
+	text-align:center;  
+}
+td.center{
+	text-align:center;
+}
+td.right{
+	text-align:right;
+	padding-right:10px;
+}
+.indentten{
+	padding-left:10px;
+}
+.indentfif{
+	padding-left:15px;
+}
+img.ico{
+	margin-right:5px;
+}
+
+a{
+	letter-spacing: 1px;
+	font-family:"宋体", sans-serif;
+	font-size:13px;
+}
+a:link {
+	color: #000;
+	text-decoration:underline;
+}
+a:visited {
+	color: #000;
+	text-decoration:underline;
+}
+a:hover {
+	color: #C00;
+	text-decoration:none;
+
+}
+
+a.statusnatural{
+	font-size: 13px;
+	font-family: "宋体", sans-serif;
+	letter-spacing: 1px;
+}
+a.statusnatural:link {
+	color: #060;
+	text-decoration: underline;
+}
+a.statusnatural:visited {
+	color: #060;
+	text-decoration: underline;
+}
+a.statusnatural:hover {
+	color: #060;
+	text-decoration: none;
+}
+
+a.statushalt{
+	letter-spacing: 1px;
+}
+a.statushalt:link {
+	color: #c00;
+	text-decoration: underline;
+}
+a.statushalt:visited {
+	color: #c00;
+	text-decoration: underline;
+}
+a.statushalt:hover {
+	color: #c00;
+	text-decoration: none;
+}
+.statusnatural{
+    color: #060;
+    text-align:center;
+}
+.statushalt{
+    color: #c00;
+    text-align:center;
+}
+table.function , table.infolist_hr , table.infolist_vt , div.button , div.space, table.infotitle , table.content {
+	width:96%;
+	margin:0 auto;
+}
+table.function , table.infolist_hr , table.infolist_vt , table.infotitle , div.space,table.content{
+	border-width:1px 1px 1px 1px;
+}
+table.function , table.infolist_hr , table.infolist_vt, table.infotitle ,table.content {
+	border-style:solid;
+	border-color:#749fe3;
+}
+
+table.function td{
+	background:url(../images/resource_fuctionbg.jpg) repeat-x left 1px;
+	border:1px solid #FFF;
+	height:25px;
+	padding-left:10px;
+	padding-right:8px;
+}
+
+table.function td a{
+	letter-spacing: 1px;
+	font-family:"宋体", sans-serif;
+	font-size:13px;
+}
+table.function td a.common:link {
+	color: #000;
+	font-size:13px;
+	text-decoration: none;
+}
+table.function td a.common:visited {
+	color: #000;
+	font-size:13px;
+	text-decoration: none;
+}
+table.function td a.common:hover {
+	color: #C00;
+	font-size:13px;
+	text-decoration:underline;
+
+}
+
+table.function td a.current:link {
+	color: #c00;
+    font-size:13px;
+    text-decoration: underline;
+}
+table.function td a.current:visited {
+	color: #c00;
+    font-size:13px;
+    text-decoration: underline;
+}
+table.function td a.current:hover {
+	color: #c00;
+    font-size:13px;
+    text-decoration:none;
+
+}
+
+table.infolist_hr th.caption , table.infolist_vt th.caption , table.infotitle th.caption , table.infolist_vt th.captionhr{
+	background:url(../images/resource_infolistthli.gif) no-repeat 10px 5px #EBEBEB;
+	padding-left:25px;
+	text-align:left;
+	color:#000000;  /*  叶安胜修改，加粗标题行文本*/
+	font-size:15px;
+	font-weight:bold;  /*  叶安胜修改，加粗标题行文本*/
+	letter-spacing:2px;
+	height:22px;
+}
+table.infolist_hr th.common , table.infolist th.icommon{
+	background:#AEAEAE;
+	color:#FFF;
+	border-bottom:3px solid #86abda;
+	border-right:1px solid #FFF;
+}
+table.infolist_hr th.end , table.infolist th.iend{
+	background:#AEAEAE;
+	color:#FFF;
+	border-bottom:3px solid #FFDD75;
+}
+table.infolist_hr td.common , table.infolist td.icommon{
+	background-color:#EBEBEB;
+	color:#130421;
+    font-size:13px;
+    border-bottom:1px solid #FFF;
+	border-right:1px solid #FFF;
+}
+table.infolist_hr td.end , table.infolist td.iend{
+	background-color:#EBEBEB;
+	color:#000;
+    font-size:13px;
+    border-bottom:1px solid #FFF;
+}
+
+table.infolist_vt th.caption{
+	border-bottom:1px solid #749fe3;
+}
+table.infolist_vt th.common{
+	background:#d1dcf4;
+    padding:2px 0;
+    padding-left:15px;
+	text-align:right;
+    font-size:13px;
+    border-bottom:1px solid #FFF;
+	border-right:1px solid #749fe3;
+
+
+}
+table.infolist_vt th.end{
+	background:#F5EFCB;
+    padding:2px 0;
+    padding-left:15px;
+	text-align:left;
+    font-size:13px;
+    border-right:1px solid #DEB960;
+	border-bottom:1px solid #DEB960;
+}
+table.infolist_vt td.common{
+	background:#EBEBEB;
+	border-bottom:1px solid #FFF;
+}
+table.infolist_vt td.end{
+	background:#EBEBEB;
+	border-bottom:1px solid #DEB960;
+}
+
+div.button{
+	margin-top:3px;
+	text-align:right;
+}
+div.space{
+	height:6px;
+	background:#F5EFCB;
+	border-bottom:1px solid #FFF;
+	border-top:1px solid #FFF;
+}
+table.content td{
+	background:#EEE;
+    padding:5px 10px 10px 10px;
+    font-size:1em;
+    letter-spacing:0px;
+}
+table.content td span ,  table.content td p,table.content td a,table.content td div{
+    font-size:1em;
+    letter-spacing:0px;
+}
+table.content td p{
+    margin:15px 0;
+}
+
+table.infolist{
+	width:100%;
+	border:0px;
+}
+table.button{
+	margin:0 10px;
+	border:0px;
+	width:100%;
+}
+table.button td{
+	text-align:center;
+	border-width:0px 0px 0px 0px;
+}
+
+table.infolist_hr a:link{text-decoration:none;}
+table.infolist_hr a:visited{text-decoration:none;}
+table.infolist_hr a:hover{text-decoration:underline;}
+
+	#explainlogo{
+		background:url(../images/explain_logo.gif) no-repeat left top;
+		height:21px;
+		width:92%;
+		margin:0px auto;
+	}
+	
+	#explaincenter{
+		width:92%;
+		border:1px dashed #03C;
+		background-color:#F6F6F6;
+		margin:0px auto;
+	}
+	#explaincenter div{
+		font-family:宋体,Arial,sans-serif;
+		color:#000;
+        text-align:left;
+    }
+#explaincenter div.explain{padding:10px;font:12px/140% "";}
+  div.teacherinfo{
+  		width:92%;
+		border:1px dashed #BC9C49;
+		background-color:#F6F6F6;
+		margin:0px auto;
+		padding:10px 0px 10px 0px;
+  }
+  
+   
